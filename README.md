@@ -1,1 +1,2 @@
 # registrApp_Fuentes_Painevilo_002
+Instalar BarcodeScanner
