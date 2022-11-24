@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>RegistrApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-fab vertical="top" horizontal="end" slot="fixed" [routerLink]="['/login']">
+  <ion-fab-button>
+    <ion-icon name="person-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-content> 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>RegistrApp</ion-card-title>
+      <ion-card-content></ion-card-content>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="assets/registrApp.png">
+    </ion-card-content>
+  </ion-card>
+  <h1>Bienvenido: {{ nombre }}</h1>
+</ion-content>

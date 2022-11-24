@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Regresar" color="primary" mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Feriados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>2022</ion-label>
+      </ion-list-header>
+      <ion-item *ngFor="let item of getData.data">
+        {{item.date}}
+        {{item.title}}
+        {{item.extra}}
+      </ion-item>  
+    </ion-list>
+  </ion-card>
+</ion-content>
